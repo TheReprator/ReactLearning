@@ -1,46 +1,23 @@
-React:
-1)Introduction:
-	a)It's not a framework as it is based on Javascript
-	b)It is component based architecture which enchances reusability as everything is a component ie. small text 
+Stateless functional component: It's a javascript function, which optionally receives object of Properties as props, and then retruns the HTML content 
+								as JSX,which describes the UI
 
-2)Create App:
-	a)npx create-react-app appname(appname can't contain capital letters)
-	b)To run application: npm start(from root of project),
-		It will default run on URL: http://localhost:3000/
-	c)To close the application: control + c
-	
-3)Folder structure:
-	a)package.json: It includes the dependencies, scripts(building, testing, starting) for application
-	b)node_modules(folder): It contain all the dependencies for the application. It is generated when we run any of the following commands,
-					b.1)npx create-react-app appname
-					b.2)npm install
-	c)public(folder):
-		c.1)Index.html: It's the only file, which will be acessed on request. Here the "root" div tag will be used by react app to display the UI to used 
-		c.2)manifest.json: it is mainly used for web progressive apps.
-	d)src(folder): this is the folder where most of works will lie.
-		d.1)index.js: it is the starting point of any react application, which will use "root" tag from index.html(public folder), to render the react-app
-						component over it.
+Here, i had created, Greet.js file in src/component
+1) Created a simple 'function Greet' and returned simple html content
+2) Now, to connect and use 'function Greet' in other components, we need to
+	connect it to react, to use this component, which is done by command,
+	"export default Greet(functionName)"
 
-4)Component: It's a building block of react component. It's a part of user interface like fragment in android and is place in App.js(in default project) 
-				or .jsx file. They are reuable and can be nested inside other component
-				
-	4.1)Component Types:
-		a)Stateless functional component
-		b)Statefull class component 
-		
-		4.1.a)Stateless functional component: It's like a function, which retunrs the HTML data
-			  Ex:
-				function welcome(props){
-					return <h1>Hello, ${props.name}</h1>;
-				}
-		4.1.2)Statefull class component: It's a regular es6 classes that extends the component class from the react library. It must contain a render method
-							which returns the html content.
-			  Ex:
-				class App extends Component{
-					render(){
-						return <h1>Hello, {this.props.name}</h1>;
-					}
-				}
-	
-	
-	
+3)To use Greet component into App.js in src/App.js, need to import Greet,
+  which is done by command,
+	import Greet from './component/Greet';
+
+	and use this in form of '<Greet>' if no parameter have to send, else
+	like '<Greet> parameter </Greet>'
+
+
+	3.1)If components was not exported from step 2, you will get the following error,
+		as follows,
+
+			./src/App.js
+			Attempted import error: './component/Greet' does not contain
+			a default export (imported as 'Greet').
