@@ -1,21 +1,12 @@
-import logo from './logo.svg';
+import { HelloJSX } from './jsxVSjs/Hello';
+import { HelloJS } from './jsxVSjs/Hello';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-        <p>
-          Hi Vikram
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloJSX />
+      <HelloJS />
     </div>
   );
 }
