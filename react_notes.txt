@@ -1,39 +1,26 @@
-Stateless functional component: It's a javascript function, which optionally receives object of Properties as props, and then retruns the HTML content 
-								as JSX,which describes the UI.
+StateFull class component: It's a javascript ES6 classes, which optionally receives object of Properties
+			 as props, and then retruns the HTML content as JSX,which describes the UI. Apart from props,
+			 it also maintain a private internal state(means some information, which is private to this
+			 component), which can be used further to describe the user interface.
 
-Here, i had created, Greet.js file in src/component
-1) Created a simple 'function Greet' and returned simple html content
-2) Now, to connect and use 'function Greet' in other components, we need to
-	connect it to react, to use this component, which is done by command,
-	"export default Greet(functionName)"
+Here, i had created, ClassGreetCompnent.js file in src/component
+1) Created a simple 'class Greet' and override the render method. In render method, return is compulsary,
+	where you have to return the html(return <h1>Class Component</h1>) or null content(return ). 
+	Returning null will crash the page.
 
-3)To use Greet component into App.js in src/App.js, need to import Greet,
-  which is done by command,
-	import Greet from './component/Greet';
-
-	and use this in form of '<Greet>' if no parameter have to send, else
-	like '<Greet> parameter </Greet>'
+2) It is upto you, to write the export on class name*(as in this file) or at last line, as done earlier
 
 
-	3.1)If components was not exported from step 2, you will get the following error,
-		as follows,
 
-			./src/App.js
-			Attempted import error: './component/Greet' does not contain
-			a default export (imported as 'Greet').
-	
-	3.2) You can import the component by any name until "default" keyword is present in "export default Greet"
-		which i had done, in App.js like,
+3)Functional VS Class Component
+ a)Simple functions
+	a.1)Simple function
+	a.2)Use Function as much as possible
+	a.3)absence of this keyword
+	a.4)Solution without using state
+	a.5)Mainly responsible for UI
+	a.6)Stateless/ Dumb/ Presentation
 
-   		import NormalJavaScriptFunction from './component/Greet'
-		and used as  '<NormalJavaScriptFunction />'
-
-		Once, you remove the "export default functionName" from component and apply it on function directly
-		on function itself, as i had done in GreetArrow.js,
-			then you have to import the same function name in the included component, you can't change the 
-			name, i.e.
-			  import { GreetArrow } from './component/GreetArrow'; 
-			  	bcz default is not preset in GreetArrow, and export is directly bundled on function itself.
-
-4)Greet function with arrow component
-	GreetArrow.js in component imported in App.js as Greet Function
+b)Class Component:
+	b.1)More feature reach i.e.(private data, states, hooks, more class complex logic)
+	b.2)statefull/ Smart / Container
