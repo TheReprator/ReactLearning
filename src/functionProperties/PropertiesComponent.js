@@ -9,6 +9,10 @@ export const GreetFunctionProperties = (properties) => {
 /*
     1)Properties is used to dynamically fetch the elements from the included component.
     2)You can give any name to the properties aka props, properties, vikram or anyName
+    3)properties or props are immutable, which means, 
+        properties.name = 'Vikram'
+    is not allowed, and will throw error 
+        "TypeError: Cannot assign to read only property 'name' of object '#<Object>'"
 */
 
 export class GreetClassProperties extends Component {
