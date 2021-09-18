@@ -21,6 +21,19 @@ Here, i had created, Greet.js file in src/component
 			./src/App.js
 			Attempted import error: './component/Greet' does not contain
 			a default export (imported as 'Greet').
+	
+	3.2) You can import the component by any name until "default" keyword is present in "export default Greet"
+		which i had done, in App.js like,
+
+   		import NormalJavaScriptFunction from './component/Greet'
+		and used as  '<NormalJavaScriptFunction />'
+
+		Once, you remove the "export default functionName" from component and apply it on function directly
+		on function itself, as i had done in GreetArrow.js,
+			then you have to import the same function name in the included component, you can't change the 
+			name, i.e.
+			  import { GreetArrow } from './component/GreetArrow'; 
+			  	bcz default is not preset in GreetArrow, and export is directly bundled on function itself.
 
 4)Greet function with arrow component
 	GreetArrow.js in component imported in App.js as Greet Function

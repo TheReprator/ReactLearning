@@ -1,10 +1,12 @@
-import Greet from './component/GreetArrow';
+import { GreetArrow } from './component/GreetArrow';
+import NormalJavaScriptFunction from './component/Greet'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Greet />
+      <GreetArrow />
+      <NormalJavaScriptFunction />
     </div>
   );
 }
