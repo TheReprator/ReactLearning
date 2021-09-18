@@ -31,5 +31,5 @@ export const HelloJS = () => {
 
     2)So, ultimately JSX, is also converted into react native code, which is done by 
         'import React from "react";', even though it is not being used in JSX code, but this import
-        responsible for coverting the code into react
+        is responsible for coverting the code into react
 */
