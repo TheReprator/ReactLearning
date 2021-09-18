@@ -1,5 +1,5 @@
 Stateless functional component: It's a javascript function, which optionally receives object of Properties as props, and then retruns the HTML content 
-								as JSX,which describes the UI
+								as JSX,which describes the UI.
 
 Here, i had created, Greet.js file in src/component
 1) Created a simple 'function Greet' and returned simple html content
@@ -21,3 +21,6 @@ Here, i had created, Greet.js file in src/component
 			./src/App.js
 			Attempted import error: './component/Greet' does not contain
 			a default export (imported as 'Greet').
+
+4)Greet function with arrow component
+	GreetArrow.js in component imported in App.js as Greet Function
