@@ -11,10 +11,9 @@ class FirstState extends Component {
     }
 
     updateMessage () {
-        console.log(this.state.message)
         this.setState({
             message : 'Welcome New State'
-        })
+        }, () => console.log(this.state.message))
     }
 
     render() {
@@ -77,4 +76,40 @@ export default FirstState
 
     You will get error as follows,
         TypeError: Cannot read properties of null (reading 'message')
+
+6) To render the UI, you need to call,setState is ansynchronous in nature, 
+    Here if you implement updateMessage in following way,
+
+         updateMessage () {
+            this.state.message = 'Welcome New State'
+            console.log(this.state.message)
+        }
+
+    OnClick of button, updateMessage is called, here 'this.state.message' value is getting updated, 
+    you can check console for that, but UI will not be rendered, hence the same old 
+    message(Welcome First State) will be displayed.
+        So. to render the UI, we have to call it as per code, i.e.
+            updateMessage () {
+                console.log(this.state.message)
+                this.setState({
+                    message : 'Welcome New State'
+                })
+            }
+
+7)setState is Ansynchronous in nature, like to know, whther the task has been done or not, you can for
+  callBack function to check,
+        Example:
+
+         updateMessage () {
+            this.setState({
+                message : 'Welcome New State'
+            }, () => console.log('callBack Log: ' + this.state.message))
+
+             console.log('synchronous Log: '+this.state.message)
+        }
+
+    Here, whenver the state get updated, arrow function console log will be printed, so for first call,
+    log will be as follows,
+        synchronous Log: Welcome First State
+        callBack Log: Welcome New State
 */
