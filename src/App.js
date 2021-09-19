@@ -5,6 +5,7 @@ import { GreetFunctionMultiProperties } from './functionProperties/PropertiesCom
 import { GreetClassProperties } from './functionProperties/PropertiesComponent'
 import { GreetClassMultiProperties } from './functionProperties/PropertiesComponent'
 import FirstState from './state/FirstState';
+import Counter from './state/SecondState';
 
 import './App.css';
 
@@ -13,10 +14,11 @@ function App() {
     <div className="App">
 
     { /* 
-      StateExample */
-    }
+      StateExample 
     <FirstState />
-
+    */
+   }
+    <Counter />
 
     { /*   
         //  JSx VS JS  
