@@ -1,0 +1,17 @@
+Props:
+    a)Props get passed to component
+    b)Function Parameters
+    c)It is immutable
+    d)
+        props - functional Component
+        this.props - Class Component
+
+
+State:
+    a)State is managed within the component
+    b)variables declared in the function body
+    c)State can be changed
+    d)
+        useStateHook - Functional Component
+        this.stae - Class Components
+        

@@ -4,20 +4,29 @@ import { GreetFunctionProperties } from './functionProperties/PropertiesComponen
 import { GreetFunctionMultiProperties } from './functionProperties/PropertiesComponent';
 import { GreetClassProperties } from './functionProperties/PropertiesComponent'
 import { GreetClassMultiProperties } from './functionProperties/PropertiesComponent'
+import FirstState from './state/FirstState';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    {/*   
+
+    { /* 
+      StateExample */
+    }
+    <FirstState />
+
+
+    { /*   
         //  JSx VS JS  
           <HelloJSX />
           <HelloJS />
        */
-      }
+    }
 
-      {/*Properties Explanation*/}
+    {
+      /*Properties Explanation
 
       <h1>Functional Properties Compnent</h1>
       <GreetFunctionProperties name = "Bruce" role='Batman'/>
@@ -37,6 +46,8 @@ function App() {
       </GreetClassMultiProperties>
 
       <GreetClassMultiProperties name = "Bruce" role='Hulk'/>
+      */
+    }
     </div>
   );
 }

@@ -24,9 +24,10 @@ export const HelloJS = () => {
 /*
    1) Here to write 
         simple ' <h1> JSX Version </h1>'
-    into JS react native,
+    into JS,
         we have to write as below,
-    React.createElement("div", null, React.createElement("h1", null, "JS Version"))
+       React.createElement("div", null, React.createElement("h1", null, "JS Version"))
+    to return the JSX version
 
 
     2)So, ultimately JSX, is also converted into react native code, which is done by 
