@@ -10,6 +10,7 @@ import { DestrictingFirstFunction } from './destructing/Destructing';
 import { DestrictingSecondFunction } from './destructing/Destructing';
 import { DestructingClass } from './destructing/Destructing';
 import { DestructingStateClass } from './destructing/Destructing';
+import EventBindings from './eventBinding/EventBinding';
 
 import './App.css';
 
@@ -17,15 +18,15 @@ function App() {
   return (
     <div className="App">
 
+    <EventBindings />
     { /* 
       //Destructing Parameters
-     */
-    }
     <DestrictingFirstFunction name = "Tony" role='IronMan'/>
     <DestrictingSecondFunction name = "Steve Rogers" role='Captain America'/>
     <DestructingClass name = "Natasha" role='Black Widow'/>
     <DestructingStateClass />
-
+  */
+  }
     { /* 
       //StateExample 
 
