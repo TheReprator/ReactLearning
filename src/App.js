@@ -13,6 +13,9 @@ import { DestructingStateClass } from './destructing/Destructing';
 import EventBindings from './eventBinding/EventBinding';
 import MethodOneBinding from './eventBinding/MethodOneBinding';
 import MethodTwoBinding from './eventBinding/MethodTwoBinding';
+import MethodThreeBinding from './eventBinding/MethodThreeBinding';
+import MethodFourBinding from './eventBinding/MethodFourBinding';
+
 
 import './App.css';
 
@@ -24,7 +27,8 @@ function App() {
     <h1> Different Binding Methods </h1>
     <MethodOneBinding />
     <MethodTwoBinding />
-
+    <MethodThreeBinding />
+    <MethodFourBinding />
     
     { /* 
       //Destructing Parameters
