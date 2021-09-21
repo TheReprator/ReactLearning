@@ -12,6 +12,7 @@ import { DestructingClass } from './destructing/Destructing';
 import { DestructingStateClass } from './destructing/Destructing';
 import EventBindings from './eventBinding/EventBinding';
 import MethodOneBinding from './eventBinding/MethodOneBinding';
+import MethodTwoBinding from './eventBinding/MethodTwoBinding';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
     <EventBindings />
     <h1> Different Binding Methods </h1>
     <MethodOneBinding />
+    <MethodTwoBinding />
 
     
     { /* 

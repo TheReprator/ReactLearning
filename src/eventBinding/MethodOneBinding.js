@@ -6,13 +6,13 @@ class MethodOneBinding extends Component {
     constructor () {
         super()
         this.state = {
-            msg: 'Hello'
+            msg: 'Event Binding Method 1'
         }
     }
 
     changeMessage () {
         this.setState({
-            msg: 'Method 1'
+            msg: 'with bind Function call from event handler'
         })
     }
 
@@ -20,7 +20,7 @@ class MethodOneBinding extends Component {
         return (
             <dev>
                 <h1> {this.state.msg} </h1>
-                <button onClick={this.changeMessage.bind(this)}> Change Message </button>
+                <button onClick={this.changeMessage.bind(this)}> Method Name </button>
             </dev>
         )
     }
@@ -55,4 +55,8 @@ export default MethodOneBinding
         anonoymous class, which can't access the properties in android, until that is final, 
         So, here 'On click event' a separate class or context is created, which doesn't recogise the
         'this' keyword or parent context
+
+3)  This method with add new Event handler or bind on every successfull update, so it will be a performance
+    issue in big application
+
 */
