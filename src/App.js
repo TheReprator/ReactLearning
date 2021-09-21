@@ -18,18 +18,29 @@ import MethodFourBinding from './eventBinding/MethodFourBinding';
 
 
 import './App.css';
+import { ParentCommComponent } from './childCommunicationWithParent/ParentChildMethodCommunication';
 
 function App() {
   return (
     <div className="App">
 
+{ /* 
+      //Child Communication to Parent
+        */
+  }
+
+      <ParentCommComponent />
+{ /* 
+      //Destructing Parameters
     <EventBindings />
     <h1> Different Binding Methods </h1>
     <MethodOneBinding />
     <MethodTwoBinding />
     <MethodThreeBinding />
     <MethodFourBinding />
-    
+    */
+  }
+
     { /* 
       //Destructing Parameters
     <DestrictingFirstFunction name = "Tony" role='IronMan'/>
@@ -38,6 +49,7 @@ function App() {
     <DestructingStateClass />
   */
   }
+
     { /* 
       //StateExample 
 
