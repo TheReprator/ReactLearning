@@ -36,4 +36,7 @@ export function ChildCommComponent(props){
     from ChildCommComponent on click of button at line no. 28.
 
     Here ChildCommComponent ui is rendered, at line 21, inside render method of ParentCommComponent
+
+    At line no 17, please note that, alert accepts string as parameter, so we had use astreicks alongwith
+    string template or else we can concatenate as well
 */

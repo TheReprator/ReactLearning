@@ -18,7 +18,8 @@ import MethodFourBinding from './eventBinding/MethodFourBinding';
 
 
 import './App.css';
-import { ParentCommComponent } from './childCommunicationWithParent/ParentChildMethodCommunication';
+import { ParentCommComponent } from './childCommunicationWithParent/1ParentChildMethodCommunication';
+import { ParentMethodParamCommComponent } from './childCommunicationWithParent/2ParentChildMethodParamCommunication';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
   }
 
       <ParentCommComponent />
+      <ParentMethodParamCommComponent />
 { /* 
       //Destructing Parameters
     <EventBindings />
