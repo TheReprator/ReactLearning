@@ -20,18 +20,24 @@ import MethodFourBinding from './eventBinding/MethodFourBinding';
 import './App.css';
 import { ParentCommComponent } from './childCommunicationWithParent/1ParentChildMethodCommunication';
 import { ParentMethodParamCommComponent } from './childCommunicationWithParent/2ParentChildMethodParamCommunication';
+import ConditionalRendingComp from './conditionalRendring/ConditionRendringComponent';
 
 function App() {
   return (
     <div className="App">
 
-{ /* 
+    <ConditionalRendingComp />
+  { /* 
       //Child Communication to Parent
+    
+      <ParentCommComponent />
+      <ParentMethodParamCommComponent />
+
         */
   }
 
-      <ParentCommComponent />
-      <ParentMethodParamCommComponent />
+
+
 { /* 
       //Destructing Parameters
     <EventBindings />
