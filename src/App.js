@@ -21,12 +21,25 @@ import './App.css';
 import { ParentCommComponent } from './childCommunicationWithParent/1ParentChildMethodCommunication';
 import { ParentMethodParamCommComponent } from './childCommunicationWithParent/2ParentChildMethodParamCommunication';
 import ConditionalRendingComp from './conditionalRendring/ConditionRendringComponent';
+import { PersonListRendering1 } from './rendering/FirstRendering';
+import SecondRendering from './rendering/SecondRendering';
 
 function App() {
   return (
     <div className="App">
 
+    {/* List Rendering */}
+    <SecondRendering />
+    
+    {/* 
+      <PersonListRendering1 /> 
+    */}
+
+  { /*
     <ConditionalRendingComp />
+      */
+  }
+
   { /* 
       //Child Communication to Parent
     
