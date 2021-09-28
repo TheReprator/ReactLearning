@@ -25,6 +25,7 @@ import { PersonListRendering1 } from './rendering/FirstRendering';
 import SecondRendering from './rendering/SecondRendering';
 import CSSStyleSheet from './stylingReact/CSSStylingComponent';
 import { CSSStyleSheetProps } from './stylingReact/CSSStylingComponent';
+import InlineStyleComponent from './stylingReact/InLineStyleComponent';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     {/* 
       // CSS Rendering Example
     */}
+    <InlineStyleComponent />
     <CSSStyleSheet />
     <CSSStyleSheetProps name='true' />
 
