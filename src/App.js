@@ -24,6 +24,7 @@ import ConditionalRendingComp from './conditionalRendring/ConditionRendringCompo
 import { PersonListRendering1 } from './rendering/FirstRendering';
 import SecondRendering from './rendering/SecondRendering';
 import CSSStyleSheet from './stylingReact/CSSStylingComponent';
+import { CSSStyleSheetProps } from './stylingReact/CSSStylingComponent';
 
 
 function App() {
@@ -31,9 +32,11 @@ function App() {
     <div className="App">
 
     {/* 
-      //CSS Rendering Example
+      // CSS Rendering Example
     */}
     <CSSStyleSheet />
+    <CSSStyleSheetProps name='true' />
+
 
     {/* List Rendering 
       <SecondRendering />
