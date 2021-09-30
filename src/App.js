@@ -26,9 +26,7 @@ import SecondRendering from './rendering/SecondRendering';
 import CSSStyleSheet from './stylingReact/CSSStylingComponent';
 import { CSSStyleSheetProps } from './stylingReact/CSSStylingComponent';
 import InlineStyleComponent from './stylingReact/InLineStyleComponent';
-import  './stylingReact/CSS/cssRegular.css'
-import style1 from './stylingReact/CSS/cssModule.module.css'
-
+import CSSModuleComponent from './stylingReact/CSSModuleComponent'
 
 function App() {
   return (
@@ -37,16 +35,7 @@ function App() {
     {/* 
       // CSS Rendering Example
     */}
-
-    <h1 className ={style1.success}> CSS Module Component Example </h1>
-    <h1 className = 'error'> CSS Regular Example </h1>
-    {/* 
-      Line no. 41, we had used css module component, 
-      Line no. 42, it's a regular css, oncee defined here or in parent component, 
-      it can be used in all child component as well, without importing in child component
-
-    */}
-
+    <CSSModuleComponent />
     <InlineStyleComponent />
     <CSSStyleSheet />
     <CSSStyleSheetProps name='true' />

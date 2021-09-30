@@ -25,7 +25,7 @@ export function CSSStyleSheetProps(props) {
     return (
         // <div className = {cssClassName}>
         <div className = {`${cssClassName} font-xl`} >
-            <h2> CSS StyleSheet Primary</h2>
+            <h2> CSS StyleSheet with multiple css styling and property </h2>
         </div>
     )
 }

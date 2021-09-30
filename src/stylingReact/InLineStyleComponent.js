@@ -1,4 +1,6 @@
 import React from "react";
+import './CSS/cssRegular.css'
+import InlineStyleChildComponent from './InlineStyleChildComponent'
 
 const inlineStyleExample = {
     fontSize: '72px',
@@ -7,8 +9,9 @@ const inlineStyleExample = {
 
 function InlineStyleComponent() {
     return (
-        <div>
+        <div >
             <h2 style = { inlineStyleExample }> Inline CSS Styling </h2>
+            <InlineStyleChildComponent />
         </div>
     )
 }
